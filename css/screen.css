@@ -1,4 +1,5 @@
 @import url(../css/fancy/jquery.fancybox.css);
+@import url(../css/flexslider.css);
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -22,4 +23,28 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 14px; line-height: 1.4; }
+.container { width: 960px; margin: auto; *zoom: 1; }
+.container:after { content: " "; display: table; clear: both; }
+
+@-moz-keyframes fadeIn { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+  100% { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+  100% { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; } }
+@-o-keyframes fadeIn { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+  100% { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; } }
+@-ms-keyframes fadeIn { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+  100% { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; } }
+@keyframes fadeIn { 0% { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+  100% { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; } }
+.tabs { padding: 40px 15px; width: 600px; margin: 0 auto; }
+
+.tabs-nav { font-size: 0; text-align: center; margin-bottom: 40px; }
+.tabs-nav li { display: inline-block; }
+.tabs-nav li:first-child a { border-width: 1px 1px 1px 1px; border-radius: 20px 0 0 20px; }
+.tabs-nav li:last-child a { border-radius: 0 20px 20px 0; }
+.tabs-nav li.is-active a { background: #27ae60; }
+.tabs-nav a { display: block; padding: 0 30px; height: 28px; line-height: 28px; letter-spacing: 0.05em; border: 1px solid #27ae60; border-width: 1px 1px 1px 0; text-decoration: none; text-transform: uppercase; font-size: 0.75rem; color: white; }
+
+.tabs-item { display: none; -webkit-animation: fadeIn 1s both; -moz-animation: fadeIn 1s both; -ms-animation: fadeIn 1s both; -o-animation: fadeIn 1s both; animation: fadeIn 1s both; line-height: 1.4; }
+.tabs-item p { margin: 1em 0; }
+.tabs-item.is-active { display: block; }
