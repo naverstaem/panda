@@ -35,7 +35,7 @@
             </div>
 
             <ul class="list">
-                <li><img src="img/header/list/i1.png" alt=""/>
+                <li class="i1"><img src="img/header/list/i1.png" alt=""/>
 
                     <div class="txt"><strong>Купите Panda X500 сейчас</strong>
 
@@ -43,7 +43,7 @@
                             щеток и фильтр в подарок!</p>
                     </div>
                 </li>
-                <li><img src="img/header/list/i2.png" alt=""/>
+                <li class="i2"><img src="img/header/list/i2.png" alt=""/>
 
                     <div class="txt"><strong>Бесплатная доставка в течение 24 часов</strong>
 
@@ -56,8 +56,16 @@
         <div class="container counter-item-b">
             <img class="item" src="img/header/item.png" alt=""/>
 
-            <div class="conunter-b">
+            <div class="counter-b">
                 <div class="title">
+
+                    <div class="price-b">
+
+                        <p class="old">12 300</p>
+                        <p class="new">10 980 <span>р.</span></p>
+
+                    </div>
+                    <!-- /.price-b -->
                     <h2>Успейте купить <span>робот-пылесос <br/>
                                             Panda X500 </span>
                         <br/>
@@ -93,7 +101,6 @@
     </header>
 
     <div class="book-b">
-        <div class="container">
             <div class="book">
 
                 <!-- left-b start-->
@@ -168,7 +175,6 @@
 
                 <!-- right-b end-->
             </div>
-        </div>
     </div>
 
     <div class="gallery">
@@ -177,14 +183,14 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li>
-                        <a href="#tab1" data-target="tab"><i class="icon"></i> Фотогалерая</a>
+                        <a href="#tab1" data-target="tab"><i class="icon photo-icon"></i> Фотогалерая</a>
                     </li>
                     <li class="is-active">
-                        <a href="#tab2" data-target="tab"><i class="icon"></i> Видео</a>
+                        <a href="#tab2" data-target="tab"><i class="icon video-icon"></i> Видео</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
-                    <div class="tabs-item" id="tab1" data-item="tab">
+                    <div class="tabs-item is-active" id="tab2" data-item="tab">
                         <h2 class="title">Фотогалерея</h2>
 
                         <div id="gallery" class="flexslider">
@@ -212,7 +218,7 @@
                         </div>
 
                     </div>
-                    <div class="tabs-item is-active" id="tab2" data-item="tab">
+                    <div class="tabs-item" id="tab1" data-item="tab">
                         <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
                         <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                     </div>
@@ -227,10 +233,10 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li class="is-active">
-                        <a href="#tab3" data-target="tab"><i class="icon"></i> Вид сверху</a>
+                        <a href="#tab3" data-target="tab"><i class="icon up-view"></i> Вид сверху</a>
                     </li>
                     <li>
-                        <a href="#tab4" data-target="tab"><i class="icon"></i> Вид снизу</a>
+                        <a href="#tab4" data-target="tab"><i class="icon bottom-view"></i> Вид снизу</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
@@ -295,10 +301,10 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li class="is-active">
-                        <a href="#tab5" data-target="tab"><i class="icon"></i> Комплектация</a>
+                        <a href="#tab5" data-target="tab"><i class="icon panda-tool"></i> Комплектация</a>
                     </li>
                     <li>
-                        <a href="#tab6" data-target="tab"><i class="icon"></i> Характеристики</a>
+                        <a href="#tab6" data-target="tab"><i class="icon panda-descr"></i> Характеристики</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
@@ -307,47 +313,58 @@
 
                         <div class="content">
                             <div class="panda__items">
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i1.png" alt=""/>
+                                <div class="panda__item i1">
+                                    <div class="img">
+                                        <img src="img/panda-num/i1.png" alt=""/>
+                                    </div>
+                                    <!-- /.img -->
                                     <h3>50 дБ</h3>
                                     <p>уровень шума</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i2.png" alt=""/>
+                                <div class="panda__item i2">
+                                    <div class="img">
+                                        <img src="img/panda-num/i2.png" alt=""/>
+                                    </div>
                                     <h3>45 см</h3>
                                     <p>в диаметре</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i3.png" alt=""/>
+                                <div class="panda__item i3">
+                                    <div class="img"><img src="img/panda-num/i3.png" alt=""/></div>
+                                    <!-- /.img -->
                                     <h3>3,5 кг</h3>
                                     <p>вес пылесоса</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i4.png" alt=""/>
+                                <div class="panda__item i4">
+                                    <div class="img"><img src="img/panda-num/i4.png" alt=""/></div>
+                                    <!-- /.img -->
                                     <h3>50 Ватт</h3>
                                     <p>мощность <br/>
                                         всасывания</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i5.png" alt=""/>
+                                <div class="panda__item i5">
+                                    <div class="img"><img src="img/panda-num/i5.png" alt=""/></div>
+                                    <!-- /.img -->
                                     <h3>110 мин</h3>
                                     <p>работает <br/>
                                         без подзарядки</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i6.png" alt=""/>
+                                <div class="panda__item i6">
+                                    <div class="img"><img src="img/panda-num/i6.png" alt=""/></div>
+                                    <!-- /.img -->
                                     <h3>12</h3>
                                     <p>датчиков <br/>
                                         позиционирования <br/>
                                         в пространстве</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i7.png" alt=""/>
+                                <div class="panda__item i7">
+                                    <span class="img"><img src="img/panda-num/i7.png" alt=""/></span>
+                                    <!-- /.img -->
                                     <h3>10 см</h3>
                                     <p>в высоту</p>
                                 </div>
-                                <div class="panda__item">
-                                    <img src="img/panda-num/i8.png" alt=""/>
+                                <div class="panda__item i8">
+                                    <div class="img"><img src="img/panda-num/i8.png" alt=""/></div>
+                                    <!-- /.img -->
                                     <h3>450 мл</h3>
                                     <p>объем пылебака</p>
                                 </div>
@@ -385,8 +402,14 @@
             </div>
 
             <div class="right-b">
-                <div class="conunter-b">
+                <div class="counter-b">
                     <div class="title">
+                        <div class="price-b">
+
+                            <p class="old">12 300</p>
+                            <p class="new">10 980 <span>р.</span></p>
+
+                        </div>
                         <h2>Успейте купить <span>робот-пылесос <br/>
                                             Panda X500 </span>
                             <br/>
@@ -429,10 +452,10 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li>
-                        <a href="#tab7" data-target="tab"><i class="icon"></i> Отзывы о Panda X500</a>
+                        <a href="#tab7" data-target="tab"><i class="icon megaphone-rev"></i> Отзывы о Panda X500</a>
                     </li>
                     <li class="is-active">
-                        <a href="#tab8" data-target="tab"><i class="icon"></i> Вопрос/ответ</a>
+                        <a href="#tab8" data-target="tab"><i class="icon ask-rev"></i> Вопрос/ответ</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
@@ -440,6 +463,10 @@
                         <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                     </div>
                     <div class="tabs-item is-active" id="tab8" data-item="tab">
+
+                        <h2 class="title">отзывы о panda x-500</h2>
+
+                        <!-- /.title -->
                         <div id="carousel" class="flexslider">
                             <ul class="slides">
                                 <li>
@@ -496,14 +523,24 @@
                                     <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
 
                                 </li>
+                                <li>
+                                    <div class="top">
+                                        <img src="img/reviews/ava-null.jpg" alt=""/>
+
+                                        <h2>Людмила <span>Москва</span></h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
                                 <!-- items mirrored twice, total of 12 -->
                             </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <a class="btn add-rev" href=""><i class="icon"></i> Добавить отзыв</a>
+            <a class="btn add-rev" href=""><i class="icon add-rev"></i> Добавить отзыв</a>
 
         </div>
     </section>
@@ -513,10 +550,10 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li>
-                        <a href="#tab9" data-target="tab"><i class="icon"></i>Гарантия</a>
+                        <a href="#tab9" data-target="tab"><i class="icon warranty-tab"></i>Гарантия</a>
                     </li>
                     <li class="is-active">
-                        <a href="#tab10" data-target="tab"><i class="icon"></i> Сервис</a>
+                        <a href="#tab10" data-target="tab"><i class="icon service-tab"></i> Сервис</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
@@ -557,58 +594,74 @@
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
                     <li>
-                        <a href="#tab11" data-target="tab"><i class="icon pay"></i> Оплата</a>
+                        <a href="#tab11" data-target="tab"><i class="icon pay-tab"></i> Оплата</a>
                     </li>
                     <li class="is-active">
-                        <a href="#tab12" data-target="tab"><i class="icon shipping"></i>Доставка</a>
+                        <a href="#tab12" data-target="tab"><i class="icon shipping-tab"></i>Доставка</a>
                     </li>
                 </ul>
                 <div class="tabs-content">
-                    <div class="tabs-item" id="tab11" data-item="tab">
+                    <div class="tabs-item is-active" id="tab11" data-item="tab">
                         <h2 class="title">удобные способы оплаты</h2>
 
                         <div class="pay-items">
                             <h3>Оплата наличными</h3>
 
-                            <div class="pay-item i1">
-                                <img class="icon" src="img/pay-ship/i1.png" alt=""/>
+                            <div class="row">
+                                <div class="pay-item i1">
+                                    <div class="img"><img class="icon" src="img/pay-ship/i1.png" alt=""/></div>
 
-                                <p>Курьеру (если вы заказываете адресную доставку на дом). Оплата производится после получения и проверки товара.</p>
-                            </div>
-                            <div class="pay-item i2">
-                                <img class="icon" src="img/pay-ship/i2.png" alt=""/>
+                                    <p>Курьеру (если вы заказываете адресную доставку на дом). Оплата производится после
+                                        получения и проверки товара.</p>
+                                </div>
+                                <div class="pay-item i2">
+                                    <div class="img"><img class="icon" src="img/pay-ship/i2.png" alt=""/></div>
+                                    <!-- /.img -->
 
-                                <p>При получении товара в пункте выдачи (для жителей Санкт-Петербурга и Москвы). Точные адреса вы найдете
-                                    <a href="">здесь.</a></p>
-                            </div>
-                            <div class="pay-item i3">
-                                <img class="icon" src="img/pay-ship/i3.png" alt=""/>
+                                    <p>При получении товара в пункте выдачи (для жителей Санкт-Петербурга и Москвы).
+                                        Точные адреса вы найдете
+                                        <a href="">здесь.</a></p>
+                                </div>
+                                <div class="pay-item i3">
+                                    <div class="img"><img class="icon" src="img/pay-ship/i3.png" alt=""/></div>
+                                    <!-- /.img -->
 
-                                <p>Наложенный платеж после получения товара в почтовом отделении.</p>
+                                    <p>Наложенный платеж после получения товара в почтовом отделении.</p>
+                                </div>
                             </div>
+                            <!-- /.ro -->
 
                             <h3>Безналичный расчет для юр. лиц</h3>
 
-                            <div class="pay-item i4">
-                                <img class="icon" src="img/pay-ship/i4.png" alt=""/>
+                            <div class="row">
+                                <div class="pay-item i4">
+                                    <div class="img"><img class="icon" src="img/pay-ship/i4.png" alt=""/></div>
+                                    <!-- /.img -->
 
-                                <p>Если вы хотите провести безналичный расчет, вам нужно отправить свои реквизиты на электронную почту:
-                                    <a href="">info@shop-robots.com.</a></p>
+                                    <p>Если вы хотите провести безналичный расчет, вам нужно отправить свои реквизиты на
+                                        электронную почту:
+                                        <a href="">info@shop-robots.com.</a></p>
+                                </div>
+                                <div class="pay-item i5">
+                                    <div class="img"><img class="icon" src="img/pay-ship/i5.png" alt=""/></div>
+                                    <!-- /.img -->
+                                    <p>Далее мы вышлем вам счёт, который можно будет оплатить через любой банк,
+                                        действующий на территории России.</p>
+                                </div>
                             </div>
-                            <div class="pay-item i5">
-                                <img class="icon" src="img/pay-ship/i5.png" alt=""/>
-                                <p>Далее мы вышлем вам счёт, который можно будет оплатить через любой банк, действующий на территории России.</p>
-                            </div>
+                            <!-- /.row -->
                         </div>
 
                     </div>
-                    <div class="tabs-item is-active" id="tab12" data-item="tab">
+                    <div class="tabs-item" id="tab12" data-item="tab">
                         <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
                         <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="calc"></div>
     </section>
 
     <section class="why-we">
@@ -692,8 +745,14 @@
             </div>
 
             <div class="right-b">
-                <div class="conunter-b">
+                <div class="counter-b">
                     <div class="title">
+                        <div class="price-b">
+
+                            <p class="old">12 300</p>
+                            <p class="new">10 980 <span>р.</span></p>
+
+                        </div>
                         <h2>Успейте купить <span>робот-пылесос <br/>
                                             Panda X500 </span>
                             <br/>
@@ -727,6 +786,8 @@
                 </div>
 
                 <div class="surprice-b">
+                    <img class="last-b-complect" src="img/last-b/complekt.png" alt=""/>
+
                     <div class="surprice">
                         <strong>25</strong>
                         <p>подарков <br/>
@@ -741,25 +802,34 @@
         </div>
     </section>
 
+    <div class="map-b">
+
+    </div>
+    <!-- /.map-b -->
+
     <footer>
         <div class="container">
-            <a class="logo" href="">
-                <img src="img/logo_header.png" alt=""/>
+            <div class="row">
+                <a class="logo" href="">
+                    <img src="img/logo_header.png" alt=""/>
 
-                <h2>Официальный дилер компании PANDA</h2>
-            </a>
+                    <h2>Официальный дилер компании PANDA</h2>
+                </a>
 
-            <div class="tel-b">
-                <p>По всем вопросам звоните:</p>
-                <h2><i class="icon phone-icon"></i>8 (905) 223-09-47</h2>
+                <div class="tel-b">
+                    <p>По всем вопросам звоните:</p>
 
-                <p>или <a href="">ЗАКАЖИТЕ ЗВОНОК</a></p>
+                    <h2><i class="icon phone-icon"></i>8 (905) 223-09-47</h2>
+
+                    <p>или <a href="">ЗАКАЖИТЕ ЗВОНОК</a></p>
+                </div>
             </div>
+            <!-- /.row -->
 
             <div class="contacts">
-                <a class="skype" href="">panda-x500.ru</a>
-                <a class="mail" href="">info@panda-x500.ru</a>
-                <a class="icq" href="">681 545 397</a>
+                <a class="skype" href=""><i></i>panda-x500.ru</a>
+                <a class="mail" href=""><i></i>info@panda-x500.ru</a>
+                <a class="icq" href=""><i></i>681 545 397</a>
             </div>
         </div>
     </footer>

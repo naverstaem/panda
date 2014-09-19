@@ -25,8 +25,16 @@ head.ready(function() {
         animation: "slide",
         animationLoop: false,
         slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5
+        itemWidth: 380,
+        touch: true
+    });
+
+    $('.flex-control-paging').append('<li class="next"></li>').prepend('<li class="prev"></li>');
+    $('.flex-control-paging .next').click(function(){
+        $(this).parent().siblings('.flex-direction-nav').find('.flex-next').trigger('click');
+    });
+    $('.flex-control-paging .prev').click(function(){
+        $(this).parent().siblings('.flex-direction-nav').find('.flex-prev').trigger('click');
     });
 
 });
