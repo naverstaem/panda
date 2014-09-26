@@ -102,7 +102,7 @@ head.ready(function() {
                 preset: 'islands#icon',
                 iconColor: '#4d7198'
             }))
-            .add(new ymaps.Placemark([55.782506, 37.632538], {
+            .add(new ymaps.Placemark([59.947581, 30.267044], {
                 balloonContent: '10-я линия В.О., д.59'
             }, {
                 preset: 'islands#icon',
@@ -129,6 +129,10 @@ head.ready(function() {
 
         $('#service-addr a.msk1').click(function(){
             myMap.panTo([55.782506, 37.632538], {flying: true});
+        });
+
+        $('#service-addr a.other').click(function(){
+            myMap.panTo([59.947581, 30.267044], {flying: true});
         });
 
 
