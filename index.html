@@ -5,8 +5,27 @@
 	<title>Panda template</title>
 	<meta name="viewport" content="initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
+
+    <div class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="#l1">Почему Panda?</a></li>
+                <li><a href="#l2">Фото и Видео</a></li>
+                <li><a href="#l3">Конструкция</a></li>
+                <li><a href="#l4">Характеристики</a></li>
+                <li><a href="#l5">Комплектация</a></li>
+                <li><a href="#l6">Отзывы</a></li>
+            </ul>
+
+            <a class="btn fancy-form" href="#big-f">Купить за 10 980р.</a>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.menu -->
+
     <header>
         <div class="container top">
             <a class="logo" href="">
@@ -18,8 +37,8 @@
             <div class="tel-b">
                 <p>По всем вопросам звоните:</p>
                 <h2><i class="icon phone-icon"></i>8 (905) 223-09-47</h2>
-                
-                <p>или <a href="">ЗАКАЖИТЕ ЗВОНОК</a></p>
+
+                <p>или <a href="#big-f-ask" class="fancy-form">ЗАКАЖИТЕ ЗВОНОК</a></p>
             </div>
         </div>
 
@@ -100,7 +119,7 @@
         </div>
     </header>
 
-    <div class="book-b">
+    <div class="book-b" id="l1">
             <div class="book">
 
                 <!-- left-b start-->
@@ -177,7 +196,7 @@
             </div>
     </div>
 
-    <div class="gallery">
+    <div class="gallery" id="l2">
         <div class="container">
 
             <div class="tabs js-tabs">
@@ -190,10 +209,10 @@
                     </li>
                 </ul>
                 <div class="tabs-content">
-                    <div class="tabs-item is-active" id="tab2" data-item="tab">
+                    <div class="tabs-item" id="tab1" data-item="tab">
                         <h2 class="title">Фотогалерея</h2>
 
-                        <div id="gallery" class="flexslider">
+                        <div id="gallery-photo" class="flexslider">
                             <ul class="slides">
                                 <li data-thumb="img/photogallery/small/i1.jpg">
                                     <img src="img/photogallery/big/i1.jpg" />
@@ -218,9 +237,33 @@
                         </div>
 
                     </div>
-                    <div class="tabs-item" id="tab1" data-item="tab">
-                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                    <div class="tabs-item is-active" id="tab2" data-item="tab">
+                        <h2 class="title">видеогалерея</h2>
+
+                        <div id="gallery-video" class="flexslider">
+                            <ul class="slides">
+                                <li data-thumb="img/photogallery/small/i1.jpg">
+                                    <img src="img/video/video-gallery.jpg" />
+                                </li>
+                                <li data-thumb="img/photogallery/small/i2.jpg">
+                                    <img src="img/video/video-gallery.jpg" />
+                                </li>
+                                <li data-thumb="img/photogallery/small/i3.jpg">
+                                    <img src="img/video/video-gallery.jpg" />
+                                </li>
+                                <li data-thumb="img/photogallery/small/i4.jpg">
+                                    <img src="img/photogallery/big/i1.jpg" />
+                                </li>
+                                <li data-thumb="img/photogallery/small/i5.jpg">
+                                    <img src="img/photogallery/big/i1.jpg" />
+                                </li>
+                                <li data-thumb="img/photogallery/small/i6.jpg">
+                                    <img src="img/photogallery/big/i1.jpg" />
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -228,7 +271,7 @@
         </div>
     </div>
 
-    <section class="construction">
+    <section class="construction" id="l3">
         <div class="container">
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
@@ -241,6 +284,51 @@
                 </ul>
                 <div class="tabs-content">
                     <div class="tabs-item is-active" id="tab3" data-item="tab">
+                        <h2 class="title"><span>конструкция:</span> Вид сверху</h2>
+
+                        <div class="content">
+                            <div class="left-b">
+                                <ul>
+                                    <li><i>1</i>
+
+                                        <h3>Инфракрасный датчик</h3>
+
+                                        <p>Получает сигнал от виртуальной стены. Виртуальная стена не позволяет пылесосу двигаться в нежелательные зоны.</p>
+                                    </li>
+                                    <li><i>2</i>
+
+                                        <h3>Крышка</h3>
+
+                                        <p>Открывается одним прикосновением.</p>
+                                    </li>
+                                    <li><i>3</i>
+
+                                        <h3>Пылебак</h3>
+
+                                        <p>Пластиковый контейнер емкостью 0,45 л. со специальным НЕРА – фильтром для тонкой очистки.</p>
+                                    </li>
+                                    <li><i>4</i>
+
+                                        <h3>Бампер</h3>
+
+                                        <p>Позволяет пылесосу безопасно объезжать препятствия.</p>
+                                    </li>
+                                    <li><i>5</i>
+
+                                        <h3>Сенсорные кнопки</h3>
+
+                                        <p>Начать уборку можно нажав всего лишь одну кнопку.</p>
+                                    </li>
+                                </ul>    
+                            </div>
+
+                            <div class="right-b item">
+                                <img src="img/construction/top-view.png" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tabs-item" id="tab4" data-item="tab">
                         <h2 class="title"><span>конструкция:</span> Вид снизу</h2>
 
                         <div class="content">
@@ -276,27 +364,21 @@
 
                                         <p>Кнопка для включения/выключения пылесоса.</p>
                                     </li>
-                                </ul>    
+                                </ul>
                             </div>
 
                             <div class="right-b item">
-                                <img src="img/construction/top-view.png" alt=""/>
+                                <img src="img/construction/bottom-view.png" alt=""/>
                             </div>
                         </div>
 
-
-
-                    </div>
-                    <div class="tabs-item" id="tab4" data-item="tab">
-                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="panda-num">
+    <section class="panda-num" id="l4">
         <div class="container">
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
@@ -377,8 +459,8 @@
 
                     </div>
                     <div class="tabs-item" id="tab6" data-item="tab">
-                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                        <h2 class="title">комплектация</h2>
+                        <div class="complect"></div>
                     </div>
                 </div>
             </div>
@@ -447,7 +529,7 @@
     </section>
 
 
-    <section class="reviews-ask">
+    <section class="reviews-ask" id="l6">
         <div class="container">
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
@@ -460,14 +542,81 @@
                 </ul>
                 <div class="tabs-content">
                     <div class="tabs-item" id="tab7" data-item="tab">
-                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                        <h2 class="title">вопрос-ответ</h2>
+
+                        <div id="carousel-ask" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Сколько времени нужно на уборку 3х комнатной квартиры?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <span>27 февраля 2014 г.</span>
+                                        <h2>Какие гарантии у Вашего пылесоса?</h2>
+                                    </div>
+                                    <p>Главное чудо, которое произошло - это потеря объема в талии на 8 см за один сеанс. Процедура кавитации абсолютно безболезненна, кожа разглаживается на глазах; появилось ощущение, что живот слегка втянулся. Результат ощутимы</p>
+
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+
+                        </div>
+
+                        <a class="btn add-rev" href=""><i class="icon add-rev"></i> Добавить вопрос</a>
+
                     </div>
+
                     <div class="tabs-item is-active" id="tab8" data-item="tab">
 
                         <h2 class="title">отзывы о panda x-500</h2>
 
                         <!-- /.title -->
-                        <div id="carousel" class="flexslider">
+                        <div id="carousel-reviews" class="flexslider">
                             <ul class="slides">
                                 <li>
                                     <div class="top">
@@ -536,11 +685,13 @@
                             </ul>
 
                         </div>
+
+                        <a class="btn add-rev" href=""><i class="icon add-rev"></i> Добавить отзыв</a>
                     </div>
                 </div>
             </div>
 
-            <a class="btn add-rev" href=""><i class="icon add-rev"></i> Добавить отзыв</a>
+
 
         </div>
     </section>
@@ -557,7 +708,7 @@
                     </li>
                 </ul>
                 <div class="tabs-content">
-                    <div class="tabs-item is-active" id="tab9" data-item="tab">
+                    <div class="tabs-item" id="tab9" data-item="tab">
                         <h2 class="title">Гарантия качества</h2>
 
                         <div class="warranty__items">
@@ -580,8 +731,57 @@
                         </div>
 
                     </div>
-                    <div class="tabs-item" id="tab10" data-item="tab">
-                        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <div class="tabs-item is-active" id="tab10" data-item="tab">
+                        <h2 class="title">ремонт и обслуживание</h2>
+
+                        <div class="row">
+                            <div class="left-b">
+                                <div class="ymap" id="map1"></div>
+                            </div>
+                            <!-- /.left-b -->
+
+                            <div class="right-b" id="service-addr">
+                                <h2>в Санкт-Петербурге</h2>
+
+                                <div class="service__items">
+                                    <div class="service__item is-active">
+                                        <i></i>
+                                        <a href="" class="spb1">Аллея Поликарпова, д.2</a>
+                                        <h2>8 (812) 921-35-75</h2>
+                                    </div>
+                                    <div class="service__item">
+                                        <i></i>
+                                        <a href="" class="spb2">пер. Антоненко, д.10</a>
+                                        <h2>8 (812) 571-29-99</h2>
+                                    </div>
+                                    <!-- /.service__item -->
+                                </div>
+                                <!-- /.service__items -->
+                                <h2>в Москве</h2>
+
+                                <div class="service__items">
+                                    <div class="service__item">
+                                        <i></i>
+                                        <a href="" class="msk1">ул. Гиляровского, д. 36</a>
+                                        <h2>8 (495) 680-58-56</h2>
+                                    </div>
+                                </div>
+                                <!-- /.service__items -->
+                                <h2>в других городах</h2>
+
+                                <div class="service__items">
+                                    <div class="service__item">
+                                        <i></i>
+                                        <a href="" class="other">10-я линия В.О., д.59</a>
+                                        <h2>8 (812) 940-15-93</h2>
+                                    </div>
+                                </div>
+                                <!-- /.service__items -->
+                                
+                            </div>
+                            <!-- /.right-b -->
+                        </div>
+                        <!-- /.row -->
                     </div>
                 </div>
             </div>
@@ -593,10 +793,10 @@
         <div class="container">
             <div class="tabs js-tabs">
                 <ul class="tabs-nav">
-                    <li>
+                    <li class="is-active">
                         <a href="#tab11" data-target="tab"><i class="icon pay-tab"></i> Оплата</a>
                     </li>
-                    <li class="is-active">
+                    <li>
                         <a href="#tab12" data-target="tab"><i class="icon shipping-tab"></i>Доставка</a>
                     </li>
                 </ul>
@@ -652,16 +852,165 @@
                             <!-- /.row -->
                         </div>
 
+
+                        <div class="calc"></div>
+
                     </div>
                     <div class="tabs-item" id="tab12" data-item="tab">
-                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+
+                        <div class="title-b">
+                            <h2>доставим товар</h2>
+                            <p>любым удобным вам способом</p>
+                        </div>
+                        <!-- /.title -->
+
+                        <div id="kurier" class="item is-active">
+                            <div class="row i1">
+                                <div class="col1">
+                                    <div class="ins">
+                                        <a href="#kurier" class="is-active"><i></i><span>Курьером</span></a>
+                                        <br/>
+                                        <a href="#post"><i></i><span>Почта России</span></a></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col1 -->
+                                <div class="col2">
+                                    <div class="ins"><i><img src="img/time.png" alt=""/></i>
+
+                                        <p>сроки</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col2 -->
+                                <div class="col3">
+                                    <div class="ins"><i><img src="img/price.png" alt=""/></i>
+
+                                        <p>стоимость</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col3 -->
+                            </div>
+
+                            <div class="row i2">
+                                <div class="col4">
+                                    <div class="ins"><p>По любому указанному адресу
+                                        в Санкт-Петербурге и Москве</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col4 -->
+
+                                <div class="col5">
+                                    <div class="ins"><p>на следующий день после заказа, <br/>
+                                        <span>в некоторых случаях в день заказа.</span></p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col6">
+                                    <div class="ins"><p>стоимость доставки</p>
+
+                                        <h2>бесплатно!</h2></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="row i3">
+                                <div class="col7">
+                                    <div class="ins"><p>в других городах</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col4 -->
+
+                                <div class="col8">
+                                    <div class="ins"><p>от 2х до 6 дней</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col9">
+                                    <div class="ins"><p>от 700 рублей <br/>
+                                        <span>в зависимости от региона</span></p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="text">
+                                <p>А также Вы можете забрать заказ в любом из <a href="">пунктов выдачи</a> <br/>
+                                    (только в Москве и Санкт-Петербурге), уточнив заранее наличие у менеджера.</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /#kurier -->
+
+
+                        <div id="post" class="item">
+                            <div class="row i1">
+                                <div class="col1">
+                                    <div class="ins">
+                                        <a href="#kurier"><i></i><span>Курьером</span></a>
+                                        <br/>
+                                        <a href="#post" class="is-active"><i></i><span>Почта России</span></a></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col1 -->
+                                <div class="col2">
+                                    <div class="ins"><i><img src="img/time.png" alt=""/></i>
+
+                                        <p>сроки</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col2 -->
+                                <div class="col3">
+                                    <div class="ins"><i><img src="img/price.png" alt=""/></i>
+
+                                        <p>стоимость</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col3 -->
+                            </div>
+
+                            <div class="row i2">
+                                <div class="col7">
+                                    <div class="ins"><p>Заказ нужно будет забрать в почтовом <br/>отделении в любом городе России</p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col4 -->
+
+                                <div class="col8">
+                                    <div class="ins"><p>2 -8 дней <br/>
+                                        <span>в зависимости <br/>
+                                            от региона доставки</span></p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col9">
+                                    <div class="ins"><p>от 700 рублей <br/>
+                                    <span>в зависимости от региона</span>
+                                    </p></div>
+                                    <!-- /.ins -->
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="text">
+                                <p>А также Вы можете забрать заказ в любом из <a href="">пунктов выдачи</a> <br/>
+                                    (только в Москве и Санкт-Петербурге), уточнив заранее наличие у менеджера.</p>
+                            </div>
+                            <!-- /.text -->
+                        </div>
+                        <!-- /#kurier -->
+
+                        <img class="bg-ship" src="img/shipping-bg.png" alt=""/>
+                        <!-- /.bg-ship -->
+
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="calc"></div>
     </section>
 
     <section class="why-we">
@@ -728,7 +1077,7 @@
         <div class="container">
             <div class="left-b">
                 <p>Если пожелаете, мы можем вам перезвонить, и бесплатно проконсультировать по любому интересующему вас вопросу</p>
-                <a class="btn" href=""><i class="icon phone-w-btn"></i>Заказать звонок</a>
+                <a class="btn fancy-form" href="#big-f-ask"><i class="icon phone-w-btn"></i>Заказать звонок</a>
 
                 <p>Вы также можете написать нам <br/>
                     на <a href="">info@panda-x500.ru</a> или оставить письмо <br/>
@@ -821,7 +1170,7 @@
 
                     <h2><i class="icon phone-icon"></i>8 (905) 223-09-47</h2>
 
-                    <p>или <a href="">ЗАКАЖИТЕ ЗВОНОК</a></p>
+                    <p>или <a href="#big-f-ask" class="fancy-form">ЗАКАЖИТЕ ЗВОНОК</a></p>
                 </div>
             </div>
             <!-- /.row -->
@@ -833,6 +1182,163 @@
             </div>
         </div>
     </footer>
+
+
+
+
+    <div class="lb" id="big-f">
+        <div class="title">
+            <h2>Успейте купить робот-пылесос Panda X500</h2>
+            <p>по самой выгодной цене!</p>
+
+            <div class="price-b">
+                <p class="old">12 300</p>
+                <p class="new">10 980 <span>р.</span></p>
+            </div>
+        </div>
+        <!-- /.title -->
+
+        <div class="form-block">
+            <form action="sendmessage.php" method="post">
+                <div class="left-b">
+                    <input type="text" name="name" placeholder="Введите Ваше имя *"/>
+                    <input type="text" name="phone" placeholder="Введите Ваш номер телефона *"/>
+                    <input type="text" name="email" placeholder="Введите e-mail *"/>
+
+                    <button>купить за <span class="old">12 300</span> 10 980 р. <span class="arrow"></span></button>
+                    <p>Гарантируем конфиденциальность Ваших данных</p>
+                </div>
+                <div class="right-b">
+                    <div class="color-check">
+                        <h4>Выбирите цвет:</h4>
+
+                        <div class="item">
+                            <input type="radio" name="color" value="Черный" id="black" checked/>
+                            <label for="black">
+                                <span class="img">
+                                    <img src="img/checkbox-black.png" alt=""/>
+                                </span>
+                                    <!-- /.img -->
+
+                                <p>черный</p>
+                            </label>
+                        </div>
+                        <!-- /.item -->
+
+                        <div class="item">
+                            <input type="radio" name="color" value="Красный" id="red"/>
+
+                            <label for="red">
+                                <span class="img">
+                                    <img src="img/checkbox-red.png" alt=""/>
+                                </span>
+                                    <!-- /.img -->
+
+                                <p>Красный</p>
+                            </label>
+                            <!-- /# -->
+                        </div>
+                        <!-- /.item -->
+
+
+                    </div>
+                    <!-- /.color-check -->
+
+                    <div class="counter">
+                        <h5>До конца акции осталось:</h5>
+
+                        <div class="count_line clearfix">
+                            <div class="bl">
+                                <span class="h">00</span>
+
+                                <p>часов</p>
+                            </div>
+                            <div class="bl">
+                                <span class="m">23</span>
+
+                                <p>минут</p>
+                            </div>
+                            <div class="bl">
+                                <span class="s">46</span>
+
+                                <p>секунд</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.form-b -->
+    </div>
+    <!-- /#big-f.form-b -->
+
+
+    <div class="lb" id="big-f-ask">
+        <div class="title">
+            <h2>задайте вопрос специалисту</h2>
+        </div>
+        <!-- /.title -->
+
+        <div class="form-block">
+            <form action="sendmessage.php" method="post">
+                <div class="left-b">
+                    <input type="text" name="name" placeholder="Введите Ваше имя *"/>
+                    <input type="text" name="phone" placeholder="Введите Ваш номер телефона *"/>
+                    <input type="text" name="email" placeholder="Введите e-mail *"/>
+
+                    <p>Гарантируем конфиденциальность Ваших данных</p>
+                </div>
+                <div class="right-b">
+                    <textarea name="ask" placeholder="Введите свой вопрос"></textarea>
+                    <button>отправить <span class="arrow"></span></button>
+                </div>
+            </form>
+        </div>
+        <!-- /.form-b -->
+    </div>
+
+    <div class="lb" id="big-f-rev">
+        <div class="title">
+            <h2>добавьте отзыв о panda x500</h2>
+        </div>
+        <!-- /.title -->
+
+        <div class="form-block">
+            <form action="sendmessage.php" method="post">
+                <div class="left-b">
+                    <input type="text" name="name" placeholder="Введите Ваше имя *"/>
+                    <input type="text" name="phone" placeholder="Введите Ваш номер телефона *"/>
+                    <input type="text" name="email" placeholder="Введите e-mail *"/>
+
+                    <p>Гарантируем конфиденциальность Ваших данных</p>
+                </div>
+                <div class="right-b">
+                    <textarea name="ask" placeholder="Введите Ваше сообщение"></textarea>
+                    <button>отправить <span class="arrow"></span></button>
+                </div>
+            </form>
+        </div>
+        <!-- /.form-b -->
+    </div>
+
+
+    <div id="tnx-order">
+        <h2>спасибо за заявку!</h2>
+
+        <p>Наш менеджер свяжется с Вами <br/>
+            для подтверждения заказа и уточнения <br/>
+            вариантов и адреса доставки.</p>
+    </div>
+    <!-- /#tnx-order -->
+
+
+
+    <div id="tnx-ask">
+        <h2>спасибо!</h2>
+
+        <p>Ваше мнение очень важно для нас.</p>
+    </div>
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 
