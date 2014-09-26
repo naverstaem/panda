@@ -43,9 +43,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .tabs-nav li i.icon.video-icon { background: url('../img/icons-sc6b0515bda.png') 0 -1144px no-repeat; width: 19px; height: 19px; top: 9px; }
 .tabs-nav li i.icon.photo-icon { background: url('../img/icons-sc6b0515bda.png') 0 -724px no-repeat; width: 22px; height: 22px; top: 9px; }
 .tabs-nav li i.icon.up-view { background: url('../img/icons-sc6b0515bda.png') 0 -1080px no-repeat; width: 21px; height: 21px; top: 11px; }
-.tabs-nav li i.icon.bottom-view { background: url('../img/icons-sc6b0515bda.png') 0 -172px no-repeat; width: 21px; height: 21px; top: 9px; left: 30px; }
+.tabs-nav li i.icon.bottom-view { background: url('../img/icons-sc6b0515bda.png') 0 -172px no-repeat; width: 21px; height: 21px; top: 9px; }
 .tabs-nav li i.icon.panda-tool { background: url('../img/icons-sc6b0515bda.png') 0 -544px no-repeat; width: 19px; height: 21px; top: 11px; }
-.tabs-nav li i.icon.panda-descr { background: url('../img/icons-sc6b0515bda.png') 0 -420px no-repeat; width: 19px; height: 21px; top: 10px; left: 30px; }
+.tabs-nav li i.icon.panda-descr { background: url('../img/icons-sc6b0515bda.png') 0 -420px no-repeat; width: 19px; height: 21px; top: 10px; }
 .tabs-nav li i.icon.megaphone-rev { background: url('../img/icons-sc6b0515bda.png') 0 -360px no-repeat; width: 24px; height: 19px; top: 10px; left: 15px; }
 .tabs-nav li i.icon.ask-rev { background: url('../img/icons-sc6b0515bda.png') 0 -110px no-repeat; width: 25px; height: 20px; top: 11px; }
 .tabs-nav li i.icon.warranty-tab { background: url('../img/icons-sc6b0515bda.png') 0 -1210px no-repeat; width: 24px; height: 26px; top: 8px; left: 15px; }
@@ -61,9 +61,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 .tabs-nav li.is-active i.video-icon { background: url('../img/icons-sc6b0515bda.png') 0 -1111px no-repeat; width: 23px; height: 23px; top: 9px; }
 .tabs-nav li.is-active i.photo-icon { background: url('../img/icons-sc6b0515bda.png') 0 -693px no-repeat; width: 21px; height: 21px; top: 9px; }
 .tabs-nav li.is-active i.up-view { background: url('../img/icons-sc6b0515bda.png') 0 -1048px no-repeat; width: 22px; height: 22px; top: 11px; }
-.tabs-nav li.is-active i.bottom-view { background: url('../img/icons-sc6b0515bda.png') 0 -140px no-repeat; width: 22px; height: 22px; top: 9px; left: 30px; }
+.tabs-nav li.is-active i.bottom-view { background: url('../img/icons-sc6b0515bda.png') 0 -140px no-repeat; width: 22px; height: 22px; top: 9px; }
 .tabs-nav li.is-active i.panda-tool { background: url('../img/icons-sc6b0515bda.png') 0 -512px no-repeat; width: 20px; height: 22px; top: 11px; }
-.tabs-nav li.is-active i.panda-descr { background: url('../img/icons-sc6b0515bda.png') 0 -389px no-repeat; width: 23px; height: 21px; top: 10px; left: 30px; }
+.tabs-nav li.is-active i.panda-descr { background: url('../img/icons-sc6b0515bda.png') 0 -389px no-repeat; width: 23px; height: 21px; top: 10px; }
 .tabs-nav li.is-active i.megaphone-rev { background: url('../img/icons-sc6b0515bda.png') 0 -330px no-repeat; width: 25px; height: 20px; top: 10px; left: 15px; }
 .tabs-nav li.is-active i.ask-rev { background: url('../img/icons-sc6b0515bda.png') 0 -79px no-repeat; width: 26px; height: 21px; top: 11px; }
 .tabs-nav li.is-active i.warranty-tab { background: url('../img/icons-sc6b0515bda.png') 0 -1173px no-repeat; width: 25px; height: 27px; top: 8px; left: 15px; }

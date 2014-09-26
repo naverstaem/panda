@@ -155,8 +155,15 @@ head.ready(function() {
         }, 500, 'swing', function () {
             // window.location.hash = target;
         });
+
     });
-    
+
+    $('.menu a.tab5').click(function(){
+        $(".tabs-nav a[href=#tab5]").trigger('click');
+    })
+    $('.menu a.tab6').click(function(){
+        $(".tabs-nav a[href=#tab6]").trigger('click');
+    })
 
 
 
