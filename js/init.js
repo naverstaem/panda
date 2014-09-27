@@ -4,5 +4,6 @@ head.load(
 	"js/lib/jquery.validate.js",
 	"js/lib/jquery.flexslider-min.js",
 	"js/lib/fancy/jquery.fancybox.pack.js",
+	"js/lib/imagesloaded.pkgd.min.js",
 	"js/common.js"
 );

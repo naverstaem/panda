@@ -119,13 +119,17 @@ $pt__regula: 'pt_monoregular'
         +border-radius(20px)
         margin-right: -35px
 
+      &.is-active
+        a
+          padding-right: 50px
+
     &:last-child
       a
         +border-radius(20px)
 
       &.is-active
         a
-          padding-left: 77px
+          padding-left: 80px
 
           .icon
             left: 45px
@@ -147,6 +151,7 @@ $pt__regula: 'pt_monoregular'
       padding-top: 11px
       position: relative
       z-index: 2
+      padding-right: 25px
 
 
 
@@ -806,12 +811,12 @@ h2.title
 
         img
           margin-top: 10px
-  #tab6
-    .complect
-      background: url("../img/panda-num/complect.jpg") no-repeat
-      width: 1061px
-      height: 727px
-      margin-bottom: 25px
+
+  .complect
+    background: url("../img/panda-num/complect.jpg") no-repeat
+    width: 1061px
+    height: 727px
+    margin-bottom: 25px
 
           
 .seo-text
@@ -1985,3 +1990,28 @@ footer
 
 .fancybox-inner
   overflow: visible !important
+
+
+.wrapper
+  &.active
+    background: #fff
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 99
+
+.preloader
+  display: none
+
+  &.active
+    display: block
+    background: url('../img/preloader.gif') no-repeat
+    width: 60px
+    height: 60px
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 100
+    margin: -30px 0 0 -30px
