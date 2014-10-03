@@ -122,6 +122,7 @@ header .descr .list li.i1 img { margin-left: -160px; margin-top: -50px; }
 .counter-b .counter .bl p, .counter-b .counter .bl .last-b .left-b a, .last-b .left-b .counter-b .counter .bl a { color: white; font-family: "exo_2thin"; font-size: 12px; }
 .counter-b .btn { width: 165px; height: 60px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #19b5ed; -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); background-image: -moz-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: linear-gradient(to top, #eb610d 0%, #f29128 100%); display: inline-block; text-align: center; color: white; font-family: "exo_2black"; font-weight: normal; font-size: 25px; line-height: 1; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23); text-decoration: none; text-transform: uppercase; padding-top: 17px; float: right; margin-top: 10px; position: relative; }
 .counter-b .btn .arrow { display: inline-block; background: url("../img/counter-b/arrow.png") no-repeat; width: 37px; height: 35px; position: absolute; top: 23px; right: -10px; }
+.counter-b .btn:hover { background-image: -moz-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: linear-gradient(to top, #fda666 0%, #f29128 100%); }
 
 .counter-item-b .item { margin-left: 50px; }
 .counter-item-b .counter-b { float: right; }
@@ -145,8 +146,11 @@ h2.title { color: #131515; font-family: "exo_2medium"; font-size: 36px; text-tra
 
 .gallery { padding-top: 50px; padding-bottom: 60px; }
 .gallery #gallery-video, .gallery #gallery-photo { margin-top: 60px; }
-.gallery .flex-control-nav > li { border: 2px #3cabb9 solid; margin: 0 3px; }
-.gallery .flex-control-nav > li img { width: 150px; height: 100px; }
+.gallery #gallery-photo-thumb .flex-direction-nav { display: none; }
+.gallery #gallery-photo-thumb .slides li { border: 2px #3cabb9 solid; margin: 0 3px; cursor: pointer; height: 104px; }
+.gallery #gallery-photo-thumb .slides li img { width: 100%; height: 100px; }
+.gallery .flex-control-thumbs > li { border: 2px #3cabb9 solid; margin: 0 3px; }
+.gallery .flex-control-thumbs > li img { width: 150px; height: 100px; }
 
 .construction { background: url("../img/construction/bg.jpg") no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 60px; overflow: hidden; padding-bottom: 100px; }
 .construction .content { position: relative; *zoom: 1; }
@@ -320,6 +324,7 @@ h2.title { color: #131515; font-family: "exo_2medium"; font-size: 36px; text-tra
 .last-b .left-b { float: left; width: 50%; }
 .last-b .left-b p, .last-b .left-b a { color: white; font-family: "exo_2light"; font-size: 18px; }
 .last-b .left-b .btn { width: 253px; height: 44px; display: inline-block; text-decoration: none; -moz-border-radius: 22px; -webkit-border-radius: 22px; border-radius: 22px; background-color: #ff855b; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.65); -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.65); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.65); background-image: -moz-linear-gradient(bottom, #33a7b5 0%, #4db3bf 100%); background-image: -webkit-linear-gradient(bottom, #33a7b5 0%, #4db3bf 100%); background-image: linear-gradient(to top, #33a7b5 0%, #4db3bf 100%); font-size: 18px; line-height: 1; font-family: "exo_2medium"; padding-top: 11px; position: relative; padding-left: 55px; margin-bottom: 30px; margin-top: 15px; }
+.last-b .left-b .btn:hover { background-image: -moz-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: linear-gradient(to top, #fda666 0%, #f29128 100%); }
 .last-b .left-b .btn .icon { position: absolute; }
 .last-b .left-b .btn .phone-w-btn { background: url('../img/icons-sbbc140ad8a.png') 0 -660px no-repeat; width: 19px; height: 22px; top: 9px; left: 22px; }
 .last-b .left-b .btn .mail-w-btn { background: url('../img/icons-sbbc140ad8a.png') 0 -304px no-repeat; width: 23px; height: 16px; left: 20px; top: 13px; }
@@ -365,6 +370,7 @@ footer .contacts .icq i { background: url('../img/icons-sbbc140ad8a.png') 0 -280
 .menu ul li { float: left; margin-right: 30px; }
 .menu ul li a { display: inline-block; font-size: 16px; line-height: 1; font-family: "exo_2light"; color: black; text-decoration: none; border-bottom: 1px black dotted; }
 .menu a.btn { width: 176px; height: 31px; display: block; float: right; -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; background-color: black; background-image: -moz-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: linear-gradient(to top, #eb610d 0%, #f29128 100%); text-align: center; text-decoration: none; color: white; font-family: "exo_2medium"; font-size: 16px; padding-top: 5px; }
+.menu a.btn:hover { background-image: -moz-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: linear-gradient(to top, #fda666 0%, #f29128 100%); }
 
 .lb { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: url("../img/big-form-bg.jpg") no-repeat; -moz-background-size: 100%; -o-background-size: 100%; -webkit-background-size: 100%; background-size: 100%; display: none; }
 
@@ -409,6 +415,7 @@ footer .contacts .icq i { background: url('../img/icons-sbbc140ad8a.png') 0 -280
 #big-f .form-block input[type=text][name=phone], #big-f-ask .form-block input[type=text][name=phone], #big-f-rev .form-block input[type=text][name=phone] { background: white url("../img/input-phone.png") 17px 14px no-repeat; }
 #big-f .form-block input[type=text][name=email], #big-f-ask .form-block input[type=text][name=email], #big-f-rev .form-block input[type=text][name=email] { background: white url("../img/input-email.png") 17px 17px no-repeat; }
 #big-f .form-block button, #big-f-ask .form-block button, #big-f-rev .form-block button { width: 390px; height: 60px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; background-color: #19b5ed; -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); box-shadow: 0 0 3px rgba(0, 0, 0, 0.74), inset 0 1px 0 rgba(255, 255, 255, 0.75); background-image: -moz-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #eb610d 0%, #f29128 100%); background-image: linear-gradient(to top, #eb610d 0%, #f29128 100%); display: inline-block; text-align: center; color: white; font-family: "exo_2black"; font-weight: normal; font-size: 25px; line-height: 1; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.23); text-decoration: none; text-transform: uppercase; padding-top: 2px; float: right; margin-top: 10px; position: relative; }
+#big-f .form-block button:hover, #big-f-ask .form-block button:hover, #big-f-rev .form-block button:hover { background-image: -moz-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: -webkit-linear-gradient(bottom, #fda666 0%, #f29128 100%); background-image: linear-gradient(to top, #fda666 0%, #f29128 100%); }
 #big-f .form-block button .old, #big-f-ask .form-block button .old, #big-f-rev .form-block button .old { font-size: 16px; font-family: "exo_2light"; text-decoration: line-through; text-shadow: none; display: inline-block; margin: 0 5px; position: relative; top: -5px; }
 #big-f .form-block button .arrow, #big-f-ask .form-block button .arrow, #big-f-rev .form-block button .arrow { display: inline-block; background: url("../img/counter-b/arrow.png") no-repeat; width: 37px; height: 35px; position: absolute; top: 23px; right: -10px; }
 

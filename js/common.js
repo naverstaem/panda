@@ -20,16 +20,39 @@ head.ready(function() {
     } tabs();
 
     function gallerySliderStart(){
+        //$('#gallery-photo').flexslider({
+        //    animation: "slide",
+        //    controlNav: "thumbnails",
+        //    animationLoop: false,
+        //    start: function( slider ){
+        //
+        //        $('#gallery-photo').css( 'display', 'block' );
+        //
+        //    },
+        //    minItems: 6,
+        //    maxItems: 6
+        //});
+
+        $('#gallery-photo-thumb').flexslider({
+            animation: "slide",
+            //controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 150,
+            itemMargin: 3,
+            asNavFor: '#gallery-photo',
+            minItems: 6,
+            maxItems: 6
+        });
+
         $('#gallery-photo').flexslider({
             animation: "slide",
-            controlNav: "thumbnails",
+            controlNav: false,
             animationLoop: false,
-            start: function( slider ){
-
-                $('#gallery-photo').css( 'display', 'block' );
-
-            }
+            slideshow: false,
+            sync: "#gallery-photo-thumb"
         });
+
 
         $('#gallery-video').flexslider({
             animation: "slide",
@@ -44,7 +67,9 @@ head.ready(function() {
             animationLoop: false,
             slideshow: false,
             itemWidth: 380,
-            touch: true
+            touch: true,
+            minItems: 2,
+            maxItems: 2
         });
 
         $('#carousel-reviews').flexslider({
@@ -52,7 +77,9 @@ head.ready(function() {
             animationLoop: false,
             slideshow: false,
             itemWidth: 380,
-            touch: true
+            touch: true,
+            minItems: 2,
+            maxItems: 2
         });
     } carouselSliderStart();
 

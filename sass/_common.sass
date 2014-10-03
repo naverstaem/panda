@@ -537,6 +537,9 @@ header
       top: 23px
       right: -10px
 
+    &:hover
+      @include background-image(linear-gradient(bottom, #fda666 0%, #f29128 100%)) // gradient overlay
+
 .counter-item-b
   .item
     margin-left: 50px
@@ -621,10 +624,26 @@ h2.title
   #gallery-video, #gallery-photo
     margin-top: 60px
 
+  #gallery-photo-thumb
+
+    .flex-direction-nav
+      display: none
+
+    .slides
+      li
+        border: 2px #3cabb9 solid
+        margin: 0 3px
+        cursor: pointer
+        height: 104px
+
+        img
+          width: 100%
+          height: 100px
+
   //.slides > li
   //  width: 960px !important
 
-  .flex-control-nav
+  .flex-control-thumbs
     > li
       border: 2px #3cabb9 solid
       margin: 0 3px
@@ -1438,6 +1457,9 @@ h2.title
       margin-bottom: 30px
       margin-top: 15px
 
+      &:hover
+        @include background-image(linear-gradient(bottom, #fda666 0%, #f29128 100%)) // gradient overlay
+
       .icon
         position: absolute
 
@@ -1670,6 +1692,9 @@ footer
     font-size: 16px
     padding-top: 5px
 
+    &:hover
+      @include background-image(linear-gradient(bottom, #fda666 0%, #f29128 100%)) // gradient overlay
+
 
 .lb
   @include border-radius(5px) // border radius
@@ -1891,6 +1916,9 @@ footer
       float: right
       margin-top: 10px
       position: relative
+
+      &:hover
+        @include background-image(linear-gradient(bottom, #fda666 0%, #f29128 100%)) // gradient overlay
 
       .old
         font-size: 16px
