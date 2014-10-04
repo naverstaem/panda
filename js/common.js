@@ -68,8 +68,7 @@ head.ready(function() {
             slideshow: false,
             itemWidth: 380,
             touch: true,
-            minItems: 2,
-            maxItems: 2
+            itemMargin: 50
         });
 
         $('#carousel-reviews').flexslider({
@@ -78,8 +77,7 @@ head.ready(function() {
             slideshow: false,
             itemWidth: 380,
             touch: true,
-            minItems: 2,
-            maxItems: 2
+            itemMargin: 50
         });
     } carouselSliderStart();
 
