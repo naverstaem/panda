@@ -146,6 +146,7 @@ h2.title { color: #131515; font-family: "exo_2medium"; font-size: 36px; text-tra
 
 .gallery { padding-top: 50px; padding-bottom: 60px; }
 .gallery #gallery-video, .gallery #gallery-photo { margin-top: 60px; }
+.gallery #gallery-photo .flex-direction-nav a { top: 50%; }
 .gallery #gallery-photo-thumb .flex-direction-nav { display: none; }
 .gallery #gallery-photo-thumb .slides li { border: 2px #3cabb9 solid; margin: 0 3px; cursor: pointer; height: 104px; }
 .gallery #gallery-photo-thumb .slides li img { width: 100%; height: 100px; }
@@ -444,3 +445,9 @@ footer .contacts .icq i { background: url('../img/icons-sbbc140ad8a.png') 0 -280
 
 .preloader { display: none; }
 .preloader.active { display: block; background: url("../img/preloader.gif") no-repeat; width: 60px; height: 60px; position: fixed; top: 50%; left: 50%; z-index: 100; margin: -30px 0 0 -30px; }
+
+#shipping-addr { display: none; background: white; padding: 25px; }
+#shipping-addr h3 { font-family: "exo_2regular"; text-transform: uppercase; font-weight: normal; line-height: 1; font-size: 24px; }
+#shipping-addr p, #shipping-addr .last-b .left-b a, .last-b .left-b #shipping-addr a, #shipping-addr li { font-family: "exo_2regular"; font-size: 14px; }
+#shipping-addr strong { margin-top: 20px; font-family: "exo_2bold"; font-weight: normal; display: inline-block; }
+#shipping-addr ul { list-style-type: disc; padding-left: 20px; margin: 10px 0; }
