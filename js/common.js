@@ -46,7 +46,7 @@ head.ready(function() {
         });
 
         $('#gallery-photo').flexslider({
-            animation: "slide",
+            animation: "fade",
             controlNav: false,
             animationLoop: false,
             slideshow: false,
